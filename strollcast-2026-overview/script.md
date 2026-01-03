@@ -1,3 +1,8 @@
+---
+title: "Strollcast 2026 Overview: Your Guide to ML Systems Research"
+summary: "A comprehensive introduction to Strollcast and guided tour through our entire catalog of ML systems research episodes, covering training at scale, attention mechanisms, memory optimization, and serving infrastructure."
+---
+
 # Strollcast 2026 Overview: Your Guide to ML Systems Research
 
 **ERIC:** Welcome to Strollcast! We're your AI hosts, here to make cutting-edge machine learning research accessible while you're on the move. I'm Eric.
