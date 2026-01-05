@@ -41,6 +41,10 @@ summary: "A comprehensive introduction to Strollcast and guided tour through our
 
 **ERIC:** Alpa reorganizes the problem hierarchically: intra-operator parallelism for partitioning individual operations, and inter-operator parallelism for pipeline-style scheduling. It uses integer linear programming and dynamic programming to match hand-tuned Megatron performance automatically.
 
+**MAYA:** And for those interested in architectural foundations, check out [mHC: Manifold-Constrained Hyper-Connections](https://released.strollcast.com/episodes/xie-2025-mhc_manifold_constr/xie-2025-mhc_manifold_constr.mp3). This 2025 paper extends the residual connection paradigm that's been fundamental to deep learning for over a decade.
+
+**ERIC:** The key insight is that while hyper-connections improve performance by diversifying connectivity patterns, they compromise the identity mapping property that makes residual networks stable. mHC projects these connections onto a manifold to restore that property while maintaining the performance gains, enabling better scalability for training at scale.
+
 ## Attention Mechanisms: The Core Innovation
 
 **MAYA:** Now let's talk about attention—the mechanism at the heart of transformers. We've got two groundbreaking episodes here.
@@ -81,7 +85,7 @@ summary: "A comprehensive introduction to Strollcast and guided tour through our
 
 **MAYA:** This is huge for companies deploying fine-tuned models at scale. Instead of dedicating separate infrastructure for each adapter, you can serve them all from shared GPUs efficiently.
 
-**ERIC:** And that's our catalog! Ten episodes covering the full spectrum of ML systems research, from training to serving, from attention mechanisms to memory optimization.
+**ERIC:** And that's our catalog! Eleven episodes covering the full spectrum of ML systems research, from training to serving, from attention mechanisms to memory optimization.
 
 ## Why These Papers Matter
 
