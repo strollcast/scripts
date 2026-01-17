@@ -32,7 +32,7 @@
 
 **MAYA:** Let's start with a refresher on how attention works. Eric, want to walk us through the fundamentals?
 
-**ERIC:** Sure. The attention mechanism was introduced in the famous "Attention Is All You Need" paper back in 2017. It revolutionized natural language processing.
+**ERIC:** Sure. The attention mechanism was introduced in the famous "[Attention Is All You Need](link:arxiv/1706.03762)" paper back in 2017. It revolutionized natural language processing.
 
 **MAYA:** Before transformers, we used recurrent neural networks. LSTMs and GRUs. They processed sequences one token at a time, which was slow and had trouble with long-range dependencies.
 
@@ -364,7 +364,7 @@
 
 **MAYA:** There are alternative attention mechanisms entirely. Linear attention avoids softmax by using different kernels.
 
-**ERIC:** State space models like Mamba don't use attention at all. They're recurrent architectures with different tradeoffs.
+**ERIC:** State space models like [Mamba](link:arxiv/2312.00752) don't use attention at all. They're recurrent architectures with different tradeoffs.
 
 **MAYA:** These are interesting but require major architectural changes. They're not drop-in improvements.
 

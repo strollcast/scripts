@@ -10,7 +10,7 @@
 
 **MAYA:** Exactly. This work comes from Jay Shah, Ganesh Bikshandi, and the team including Tri Dao, who's been leading the FlashAttention series. And the results are pretty remarkable - they're getting 1.5 to 2x speedups over FlashAttention-2, reaching up to 75% utilization on H100 GPUs. {{page: 1, section: "Abstract", excerpt: "We demonstrate that our method, FlashAttention-3, achieves speedup on H100 GPUs by 1.5-2.0× with FP16 reaching up to 740 TFLOPs/s (75% utilization)"}}
 
-**ERIC:** To put that in perspective, FlashAttention-2 was only achieving about 35% utilization on the same hardware. So we're talking about more than doubling the hardware efficiency. {{page: 1, section: "Abstract", excerpt: "FlashAttention-2 achieving only 35% utilization on the H100 GPU"}}
+**ERIC:** To put that in perspective, [FlashAttention-2](link:arxiv/2307.08691) was only achieving about 35% utilization on the same hardware. So we're talking about more than doubling the hardware efficiency. {{page: 1, section: "Abstract", excerpt: "FlashAttention-2 achieving only 35% utilization on the H100 GPU"}}
 
 **MAYA:** Before we jump into the technical details, let's set the stage. Why does attention performance matter so much right now?
 
@@ -150,7 +150,7 @@
 
 ## Alternative Architectures and Future
 
-**ERIC:** Speaking of context lengths, it's worth noting that while attention is still king for the highest quality models, we're seeing interesting alternatives emerge. The paper mentions models like Mamba, xLSTM, and hybrid approaches that combine attention with other mechanisms.
+**ERIC:** Speaking of context lengths, it's worth noting that while attention is still king for the highest quality models, we're seeing interesting alternatives emerge. The paper mentions models like [Mamba](link:arxiv/2312.00752), xLSTM, and hybrid approaches that combine attention with other mechanisms.
 
 **MAYA:** But even those alternative architectures often still use attention layers for the highest quality, right?
 

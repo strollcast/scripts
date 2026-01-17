@@ -10,7 +10,7 @@
 
 **ERIC:** Exactly. And the author list reads like a who's who of distributed systems—Paul Barham, Jeff Dean, Sanjay Ghemawat. These are the people who built MapReduce, TensorFlow, and countless other systems that power modern computing.
 
-**MAYA:** So what problem is Pathways trying to solve? Haven't we already figured out distributed training with systems like Megatron, DeepSpeed, and PyTorch FSDP?
+**MAYA:** So what problem is Pathways trying to solve? Haven't we already figured out distributed training with systems like [Megatron-LM](link:arxiv/2104.04473), DeepSpeed, and [PyTorch FSDP](link:arxiv/2304.11277)?
 
 **ERIC:** Great question. Those systems are excellent at what they do, but they're optimized for a specific pattern—SPMD, or Single Program Multiple Data. You write one program, and it runs the same computation across all your devices.
 
@@ -354,7 +354,7 @@
 
 **MAYA:** Are there open-source implementations of Pathways-like systems?
 
-**ERIC:** Not directly, but JAX itself is open source, and projects like Alpa are exploring similar ideas for GPU clusters. The concepts in Pathways are influencing the broader ecosystem.
+**ERIC:** Not directly, but JAX itself is open source, and projects like [Alpa](link:arxiv/2201.12023) are exploring similar ideas for GPU clusters. The concepts in Pathways are influencing the broader ecosystem.
 
 ## Lessons for Practitioners
 
@@ -402,7 +402,7 @@
 
 **MAYA:** That's all for today's episode of Strollcast. We covered Pathways, Google's asynchronous distributed dataflow system for ML—from the control plane architecture to gang scheduling to the vision of flexible, heterogeneous computation.
 
-**ERIC:** If you enjoyed this episode, check out our previous ones on Megatron-LM, FSDP, and ZeRO. Together, they paint a picture of how the industry is tackling large-scale training.
+**ERIC:** If you enjoyed this episode, check out our previous ones on [Megatron-LM](link:arxiv/2104.04473), [FSDP](link:arxiv/2304.11277), and [ZeRO](link:arxiv/1910.02054). Together, they paint a picture of how the industry is tackling large-scale training.
 
 **MAYA:** Until next time, keep strolling.
 

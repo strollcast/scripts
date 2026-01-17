@@ -20,7 +20,7 @@
 
 ## [The Multi-Tenant Problem]
 
-**ERIC:** First, let's understand the problem. LoRA, or Low-Rank Adaptation, adds small trainable matrices to a frozen base model.
+**ERIC:** First, let's understand the problem. [LoRA](link:arxiv/2106.09685), or Low-Rank Adaptation, adds small trainable matrices to a frozen base model.
 
 **MAYA:** Each LoRA adapter might only be a few megabytes. But the base model could be tens of gigabytes.
 
@@ -134,7 +134,7 @@
 
 **ERIC:** Punica fits into a broader ecosystem of LLM serving optimizations. Let's connect it to related work.
 
-**MAYA:** vLLM introduced PagedAttention for efficient KV cache management. Punica is complementary; it optimizes the LoRA computation, not the attention.
+**MAYA:** [vLLM](link:arxiv/2309.06180) introduced PagedAttention for efficient KV cache management. Punica is complementary; it optimizes the LoRA computation, not the attention.
 
 **ERIC:** You could combine Punica's SGMV with vLLM's memory management. In fact, vLLM has since incorporated similar multi-LoRA support.
 

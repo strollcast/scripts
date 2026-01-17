@@ -288,7 +288,7 @@
 
 **ERIC:** For long sequences, yes. Layer normalization and dropout can use gigabytes of memory for long sequences. Partitioning them reduces this proportionally to the tensor parallel degree.
 
-**MAYA:** What about combining with ZeRO from Microsoft?
+**MAYA:** What about combining with [ZeRO](link:arxiv/1910.02054) from Microsoft?
 
 **ERIC:** The paper mentions this is possible. ZeRO partitions optimizer states and gradients across data-parallel ranks. You can combine ZeRO with Megatron's tensor and pipeline parallelism for even more memory efficiency. DeepSpeed later productized this as 3D parallelism.
 

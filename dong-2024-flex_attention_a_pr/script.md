@@ -10,7 +10,7 @@
 
 **MAYA:** The software lottery - that's a great way to put it! Imagine you're a researcher with a brilliant new attention mechanism, but you can't actually test it because there's no efficient implementation available. You're basically stuck waiting for someone to hand-write a kernel for your specific variant.
 
-**ERIC:** Exactly! And this is happening because FlashAttention, while incredibly fast, is essentially a monolithic system. Think of it like having a Ferrari engine that's been welded shut - it's powerful, but you can't tinker with it. {{page: 1, section: 1, excerpt: "However, the importance of FlashAttention combined with its monolithic nature poses a problem for researchers aiming to try new attention variants -- a \"software lottery\"."}}
+**ERIC:** Exactly! And this is happening because [FlashAttention](link:arxiv/2205.14135), while incredibly fast, is essentially a monolithic system. Think of it like having a Ferrari engine that's been welded shut - it's powerful, but you can't tinker with it. {{page: 1, section: 1, excerpt: "However, the importance of FlashAttention combined with its monolithic nature poses a problem for researchers aiming to try new attention variants -- a \"software lottery\"."}}
 
 **MAYA:** So what's the scope of this problem? Are we talking about just a few attention variants here and there?
 

@@ -16,7 +16,7 @@
 
 **MAYA:** What I love about this paper is that it's not just about the algorithm—it's about the real-world engineering challenges of making distributed training work at scale. They share war stories from production, which is rare and incredibly valuable.
 
-**ERIC:** Right. If you remember our episode on ZeRO, FSDP is essentially PyTorch's native implementation of those ideas. But as we'll see, taking a great idea and making it production-ready in a major framework involves a lot of subtle engineering decisions.
+**ERIC:** Right. If you remember our episode on [ZeRO](link:arxiv/1910.02054), FSDP is essentially PyTorch's native implementation of those ideas. But as we'll see, taking a great idea and making it production-ready in a major framework involves a lot of subtle engineering decisions.
 
 **MAYA:** Let's set the stage. It's around 2021-2022, and the demand for training ever-larger models is exploding. GPT-3 had just demonstrated what 175 billion parameters could do, and everyone wanted to train their own large models.
 
@@ -26,7 +26,7 @@
 
 **ERIC:** And as we discussed in the ZeRO episode, that means you simply cannot train models larger than what fits in a single GPU's memory. If your model needs 40 gigabytes and your GPU has 32, you're stuck.
 
-**MAYA:** DeepSpeed had solved this problem with their ZeRO optimizer. But DeepSpeed is a separate library built on top of PyTorch. Meta wanted this capability built natively into PyTorch itself, and that's what FSDP is.
+**MAYA:** DeepSpeed had solved this problem with their [ZeRO](link:arxiv/1910.02054) optimizer. But DeepSpeed is a separate library built on top of PyTorch. Meta wanted this capability built natively into PyTorch itself, and that's what FSDP is.
 
 ---
 

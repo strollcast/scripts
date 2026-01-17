@@ -18,7 +18,7 @@
 
 **ERIC:** Let's set the stage here. We have two main approaches for making large language models more practical. Maya, want to walk us through them?
 
-**MAYA:** Absolutely. First, there's parameter-efficient fine-tuning, or PEFT. The most popular method is LoRA - Low-Rank Adaptation. {{page: 2, section: "Related Work", excerpt: "One of the most popular approaches is low-rank adaptation (LoRA), where the key insight is to decompose the adapter weights into the multiplication of two low-rank (and thus parameter-efficient) matrices."}}
+**MAYA:** Absolutely. First, there's parameter-efficient fine-tuning, or PEFT. The most popular method is [LoRA](link:arxiv/2106.09685) - Low-Rank Adaptation. {{page: 2, section: "Related Work", excerpt: "One of the most popular approaches is low-rank adaptation (LoRA), where the key insight is to decompose the adapter weights into the multiplication of two low-rank (and thus parameter-efficient) matrices."}}
 
 **ERIC:** LoRA is brilliant in its simplicity. Instead of updating all the billions of parameters in a model, you add small "adapter" matrices that learn the changes. It's like having a master document that you never edit, but you keep sticky notes with updates.
 
@@ -26,7 +26,7 @@
 
 **ERIC:** But here's the problem - these two approaches don't play nicely together when you want to deploy your model.
 
-**MAYA:** Exactly. The current leading method is QLoRA, which quantizes the base model during training but then converts everything back to high precision for deployment. {{page: 2, section: "Related Work", excerpt: "QLoRA added the adaption weights back to pre-trained weights and turned them into FP16 again, and thus the deployed model is still slow."}}
+**MAYA:** Exactly. The current leading method is [QLoRA](link:arxiv/2305.14314), which quantizes the base model during training but then converts everything back to high precision for deployment. {{page: 2, section: "Related Work", excerpt: "QLoRA added the adaption weights back to pre-trained weights and turned them into FP16 again, and thus the deployed model is still slow."}}
 
 **ERIC:** It's like compressing your clothes to fit in the suitcase, but then having to unpack everything and get a bigger suitcase when you arrive. You lose the compression benefits right when you need them most.
 

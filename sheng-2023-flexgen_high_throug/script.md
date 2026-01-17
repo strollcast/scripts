@@ -24,7 +24,7 @@
 
 **MAYA:** Exactly! And this opens up opportunities for what they call "offloading" - basically using not just your GPU memory, but also your CPU memory and even disk storage to run these huge models.
 
-**ERIC:** Now, there were already some systems trying to do this - DeepSpeed ZeRO-Inference and Hugging Face Accelerate. But the authors found these systems were leaving a lot of performance on the table. {{page: 2, section: 1, excerpt: "state-of-the-art offloading-based systems in the third category do not achieve acceptable throughput on a single GPU due to inefficient I/O scheduling and tensor placement"}}
+**ERIC:** Now, there were already some systems trying to do this - DeepSpeed [ZeRO](link:arxiv/1910.02054)-Inference and Hugging Face Accelerate. But the authors found these systems were leaving a lot of performance on the table. {{page: 2, section: 1, excerpt: "state-of-the-art offloading-based systems in the third category do not achieve acceptable throughput on a single GPU due to inefficient I/O scheduling and tensor placement"}}
 
 ## The FlexGen Approach
 

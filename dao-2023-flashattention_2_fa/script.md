@@ -18,7 +18,7 @@
 
 ## Background: The Memory Wall
 
-**MAYA:** So let's set the stage. The original FlashAttention, also by Tri Dao, was already a game-changer. It solved the memory problem by being clever about how it moved data around on the GPU. {{page: 6, section: "2.3", excerpt: "FlashAttention applies the classical technique of tiling to reduce memory IOs"}}
+**MAYA:** So let's set the stage. The original [FlashAttention](link:arxiv/2205.14135), also by Tri Dao, was already a game-changer. It solved the memory problem by being clever about how it moved data around on the GPU. {{page: 6, section: "2.3", excerpt: "FlashAttention applies the classical technique of tiling to reduce memory IOs"}}
 
 **ERIC:** Think of it like organizing your kitchen. Instead of pulling out every ingredient for a complex recipe all at once and cluttering your counter, you work in stages - get what you need for the sauce, make it, put those ingredients away, then get what you need for the next step.
 
@@ -74,7 +74,7 @@
 
 **ERIC:** And here's what that means in practical terms: you can now train a model with 16,000 token context length for the same cost as training an 8,000 token model before. That's the difference between processing a short article versus a whole research paper or book chapter.
 
-**MAYA:** The implications are huge. We're already seeing language models with much longer context windows - GPT-4 with 32k tokens, some models going up to 100k tokens or more. {{page: 2, section: "1", excerpt: "Just within the last year, there have been several language models with much longer context than before: GPT-4 with context length 32k, MosaicML's MPT with context length 65k, and Anthropic's Claude with context length 100k"}}
+**MAYA:** The implications are huge. We're already seeing language models with much longer context windows - [GPT-4](link:arxiv/2303.08774) with 32k tokens, some models going up to 100k tokens or more. {{page: 2, section: "1", excerpt: "Just within the last year, there have been several language models with much longer context than before: GPT-4 with context length 32k, MosaicML's MPT with context length 65k, and Anthropic's Claude with context length 100k"}}
 
 ## Technical Deep Dive: How It Actually Works
 

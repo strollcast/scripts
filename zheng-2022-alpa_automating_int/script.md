@@ -26,7 +26,7 @@
 
 **ERIC:** And pipeline parallelism? That's like an assembly line where different groups handle different stages of the same problem sequentially. {{page: 4, section: "2.1", excerpt: "Pipeline parallelism places different groups of ops from the model graph, referred as stages, on different workers"}}
 
-**MAYA:** Now here's where it gets tricky. The state-of-the-art systems like Megatron-LM manually combine these approaches, but they're incredibly specialized. {{page: 5, section: "2.1", excerpt: "The state-of-the-art training systems, such as Megatron-LM, manually design a specialized execution plan that combines these parallelisms for transformer language models"}} They work great for transformer models, but good luck adapting them to anything else.
+**MAYA:** Now here's where it gets tricky. The state-of-the-art systems like [Megatron-LM](link:arxiv/2104.04473) manually combine these approaches, but they're incredibly specialized. {{page: 5, section: "2.1", excerpt: "The state-of-the-art training systems, such as Megatron-LM, manually design a specialized execution plan that combines these parallelisms for transformer language models"}} They work great for transformer models, but good luck adapting them to anything else.
 
 **ERIC:** And the automatic systems? They're limited too. Most can only handle one or maybe two types of parallelism at once. It's like having a Swiss Army knife with only one blade.
 

@@ -32,7 +32,7 @@
 
 ## [Enter LoRA]
 
-**MAYA:** Before we get to QLoRA, let's talk about LoRA. It's the foundation that QLoRA builds on.
+**MAYA:** Before we get to QLoRA, let's talk about [LoRA](link:arxiv/2106.09685). It's the foundation that QLoRA builds on.
 
 **ERIC:** LoRA stands for Low-Rank Adaptation. It was introduced by Microsoft researchers in 2021. The key insight is that you don't need to update all the parameters during fine-tuning.
 
@@ -202,7 +202,7 @@
 
 **MAYA:** QLoRA spawned a lot of follow-up research. Let's mention a few directions.
 
-**ERIC:** QA-LoRA added quantization-aware training to improve quality further. The adapters learn to compensate for quantization error.
+**ERIC:** [QA-LoRA](link:arxiv/2309.14717) added quantization-aware training to improve quality further. The adapters learn to compensate for quantization error.
 
 **MAYA:** LoftQ combines LoRA-aware quantization, initializing the adapters to minimize the quantization error from the start.
 

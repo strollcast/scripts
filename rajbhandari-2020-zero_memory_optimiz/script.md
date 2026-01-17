@@ -128,11 +128,11 @@
 
 **ERIC:** There are techniques to reduce the bubbles though, right?
 
-**MAYA:** Yes, like microbatching and interleaved schedules. GPipe and PipeDream introduced clever scheduling to overlap work. But you can never fully eliminate the bubbles, and the implementation complexity is significant.
+**MAYA:** Yes, like microbatching and interleaved schedules. [GPipe](link:arxiv/1811.06965) and [PipeDream](link:arxiv/1806.03377) introduced clever scheduling to overlap work. But you can never fully eliminate the bubbles, and the implementation complexity is significant.
 
 **ERIC:** And tensor parallelism?
 
-**MAYA:** Tensor parallelism splits individual operations across GPUs. The Megatron-LM paper from NVIDIA showed how to do this for transformers. You split the big matrix multiplications in the attention and feed-forward layers across GPUs.
+**MAYA:** Tensor parallelism splits individual operations across GPUs. The [Megatron-LM](link:arxiv/2104.04473) paper from NVIDIA showed how to do this for transformers. You split the big matrix multiplications in the attention and feed-forward layers across GPUs.
 
 **ERIC:** That sounds like it would require a lot of communication.
 
@@ -364,7 +364,7 @@
 
 **MAYA:** So much. ZeRO-Offload extended the idea to CPU memory. ZeRO-Infinity pushed it further to NVMe storage—you can train trillion-parameter models on a single machine with enough SSDs. ZeRO++ optimized communication patterns for specific network topologies.
 
-**ERIC:** What about PyTorch's FSDP?
+**ERIC:** What about PyTorch's [FSDP](link:arxiv/2304.11277)?
 
 **MAYA:** Fully Sharded Data Parallel is essentially ZeRO-3 built natively into PyTorch. The PyTorch team collaborated with the DeepSpeed team, and now you can do ZeRO-style training without even using DeepSpeed if you prefer.
 
